@@ -64,87 +64,6 @@ body {
     object-fit: cover;
 }
 
-.about-div h2 {
-    font-family: 'Arial', sans-serif;
-    font-size: 36px; /* Make the heading large */
-    font-weight: bold;
-    color: black; /* Dark color for visibility */
-    margin-bottom: 20px; /* Space below heading */
-    letter-spacing: 2px; /* Add space between letters */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
-}
-
-.about-div p {
-    font-family: 'Arial', sans-serif;
-    font-size: 18px; /* Font size for the body text */
-    color: #333; /* Darker color for readability */
-    line-height: 1.6; /* Spacing between lines */
-}body {
-    margin: 0;
-    padding: 0;
-}
-
-.nav {
-    background-color: black;
-    height: 110px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    z-index: 2; /* Ensure the nav stays above the background */
-}
-
-.nav-pic {
-    width: 300px;
-    height: auto;
-}
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 50px; /* Space between list items */
-    align-items: center;
-    margin-left: 350px; /* Remove extra margin */
-}
-
-.nav-list li a {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    padding: 10px 15px;
-}
-
-.nav-list li a:hover {
-    color: #5e95e7; /* Hover effect */
-}
-
-.bookB {
-    background: #d92027;
-    color: white !important;
-    padding: 10px 20px;
-    border-radius: 30px; /* Oblong shape */
-    font-size: 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.bookB:hover {
-    color: white; /* Optional color change */
-    box-shadow: 0 0 20px 10px rgba(66, 90, 243, 0.7); /* Glowing effect */
-    transform: scale(1.05); /* Slightly scale up on hover */
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.background {
-    position: absolute;
-    top: 110px;
-    width: 100vw;
-    height: calc(100vh - 110px);
-    z-index: -1;
-    object-fit: cover;
-}
-
 .about {
     padding-top: 150px; /* Adjust this to create space below the fixed navbar */
     margin-left: 40px;
@@ -190,7 +109,7 @@ body {
 }
 
 /* Responsive Menu */
-@media (max-width: 1400px) {
+@media (max-width: 768px) {
     .hamburger {
         display: flex;
         position: absolute;
