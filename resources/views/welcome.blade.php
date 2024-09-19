@@ -7,16 +7,23 @@
     <title>Veterinary</title>
     </head>
     <body>
+    <script src="{{ asset('js/landing.js') }}" defer></script>
         <Section>
          <img class="background" src="{{ asset('images/about.jpg') }}" alt="">
             <div class=nav>
              <img class="nav-pic" src="{{ asset('images/logo.png') }}" alt="">
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul class="nav-list">
                  <li><a href="#about">About Us</a></li>
                  <li><a href="#services">Services</a></li>
                  <li><a href="#location">Location/Contact</a></li>
                  <li><a href="#BOOK NOW!" class="bookB">Book Now</a></li>
                 </ul>
+            </div>
             </div>
             <div class="about">
             <h2>About Us</h2>

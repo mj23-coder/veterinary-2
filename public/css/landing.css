@@ -147,7 +147,7 @@ body {
 
 .about {
     padding-top: 150px; /* Adjust this to create space below the fixed navbar */
-    margin-left: 40px ;
+    margin-left: 40px;
 }
 
 .about h2 {
@@ -168,4 +168,76 @@ body {
     text-align: left; /* Left-align the paragraph */
     margin: 0; /* Remove any margin */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for better contrast */
+    text-align: left;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    text-align: right;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    margin: 3px 0;
+}
+
+/* Responsive Menu */
+@media (max-width: 1400px) {
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 110px; /* Aligns below the navbar */
+        left: 0; /* Start from the left edge of the screen */
+        right: 0; /* Extend to the right edge */
+        width: 100vw; /* Full width of the viewport */
+        background-color: black;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-list.show {
+        display: flex; /* Display when hamburger is clicked */
+    }
+
+    .nav-list li {
+        width: 100%; /* Full width list items */
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-list li a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .bookB {
+        background-color: #d92027;
+        width: 80%; /* Reduce button width */
+        padding: 15px 0;
+        margin: 0 auto; /* Center button horizontally */
+    }
+
+    /* Adjust body margin and padding to prevent overflow */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
 }
